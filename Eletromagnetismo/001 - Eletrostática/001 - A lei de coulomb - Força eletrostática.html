@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+
+    <title>Eletrostática - Força elétrica </title>
+    
+    <p class ="author"> Kioolz <br> Outubro 24, 2021</p>
+    <div class="abstract">
+        <h2> Considerações gerais sobre a força eletrostática entre cargas</h2>
+        <p>Neste artigo você poderá encontrar as equações em sua forma mais geral possível, estes artifícios matemáticos tratam dos problemas de forças eletrostáticas entre distribuições contínuas de carga </p>
+
+    </div>
+</head>
+
+<title> Considerações sobre a força e o campo eletrostático</title>
+
+<h2> Considerações rápidas sobre o campo elétrico de uma distribuição genérica de cargas </h2>
+
+<p> De acordo com o GRIFFITHS - O problema fundamental que a teoria eletromagnética espera resolver é : Dado um conjunto de cargas $q_1$ que podem ser batizadas de cargas fonte. Qual será a força que as cargas fonte exercem sobre outra carga Q denominada carga de prova </p>
+
+
+<h2> Lei de Coulomb </h2>
+
+<p> A força incidente em uma carga de prova Q devida a uma única carga pontual q que está em repouso a uma distância r </p>
+
+$$ \vec{F} = \frac{1}{4 \pi \epsilon_{0}} \frac{qQ}{r^2}\hat{r} $$
+
+A constante é chamada de permissividade do espaço livre. Em unidades SI, com força em newtons (N), distância em metros (m) e carga em coulombs (C),
+
+$$ \epsilon_{0} = 8,85 \times 10^{-12} \frac{C^2}{N \cdot m^{2}} $$
+
+<h3> O vetor de separação entre as cargas r </h3> 
+
+Como necessitamos descrever de forma tridimensional a localização das cargas em relação a origem do eixo de coordenadas e em relação a outras cargas presentes no sistema, usamos o vetor de separação r para determinar a separação entre $\vec{r'}$ que é a localização de q (Carga fonte) até a localização $\vec{r}$ (Carga de prova).
+
+<h2> Lei de Coulomb aplicada a um conjunto discreto de cargas </h2>
+
+Também, é possível descrever a força eletrostática que um conjunto de N cargas discretas q exerce sobre uma carga de prova Q. 
+
+$$\vec{F_{q}} = \sum_{i=1}^{N} \vec{F_{q}} = \frac{q}{4 \pi \epsilon_{0}} \sum_{i=1}^{N} \frac{q_{i} (\vec{r} - \vec{r'})}{|\vec{r}-\vec{r'}|^{3}} $$
+
+
+<h2> Distribuições contínuas de cargas</h2>
+
+
+    <h3>Distribuição linear de cargas</h3>
+
+
+    (BASSALO) A força eletrostática exercida sobre uma carga q devido a uma distribuição contínua de carga, caracterizada pela densidade linear $\lambda(\vec{r'}$ é dada por:
+
+    $$ \vec{F_{q}} = \frac{q}{4 \pi \epsilon_{0}} \int_{C'} \frac{\lambda(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+   <h3>Distribuição superficial de cargas</h3>
+
+    Já a força eletrostática sobre uma carga devido a uma distribuição contínua de carga, caracterizada pela densidade superficial $\sigma(\vec{r'})$, é dada por:
+
+    $$ \vec{F_{q}} = \frac{q}{4 \pi \epsilon_{0}} \int_{C'} \frac{\sigma(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+    <h3>Distribuição volumétrica de cargas</h3>
+
+    E por fim, quando estivermos interessados na carga devido a uma distribuição contínua de carga, caracterizada por uma densidade volumétrica $\rho(\vec{r'})$
+
+    $$ \vec{F_{q}} = \frac{q}{4 \pi \epsilon_{0}} \int_{C'} \frac{\rho(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+
+
+
+
+
