@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+    <title>Campo elétrico de um anel</title>
+   
+    
+    <p class ="author"> Kioolz <br> Outubro 24, 2021</p>
+    <div class="abstract">
+        <h1> O campo eletrostático</h1>
+        <p>Nesta página iremos discutir as equações mais gerais possíveis para descrever distribuições lineares, superficiais e volumétricas de carga</p>
+
+    </div>
+</head>
+<body>
+
+<h3> A definição formal de campo elétrostático </h3>
+
+O campo eletrostático pode ser escrito tomando o limite da carga fonte q sendo levado a 0.
+
+$$ \vec{E}(\vec{r}) = \lim_{q \rightarrow 0}\frac{\vec{F_{q}}}{q}$$
+
+
+<h3> O princípio da superposição para o campo elétrico </h3>
+
+$$\vec{E_{q}} = \sum_{i=1}^{N} \vec{E_{q}} = \frac{1}{4 \pi \epsilon_{0}} \sum_{i=1}^{N} \frac{q_{i} (\vec{r} - \vec{r'})}{|\vec{r}-\vec{r'}|^{3}} $$
+
+<h3>
+    <h2> Distribuições contínuas de cargas</h2>
+
+
+    <h3>Distribuição linear de cargas</h3>
+
+
+    (BASSALO) A força eletrostática exercida sobre uma carga q devido a uma distribuição contínua de carga, caracterizada pela densidade linear $\lambda(\vec{r'})$ é dada por:
+
+    $$ \vec{E_{q}} = \frac{1}{4 \pi \epsilon_{0}} \int_{C'} \frac{\lambda(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+   <h3>Distribuição superficial de cargas</h3>
+
+    Já a força eletrostática sobre uma carga devido a uma distribuição contínua de carga, caracterizada pela densidade superficial $\sigma(\vec{r'})$, é dada por:
+
+    $$ \vec{E_{q}} = \frac{1}{4 \pi \epsilon_{0}} \int_{C'} \frac{\sigma(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+    <h3>Distribuição volumétrica de cargas</h3>
+
+    E por fim, quando estivermos interessados na carga devido a uma distribuição contínua de carga, caracterizada por uma densidade volumétrica $\rho(\vec{r'})$
+
+    $$ \vec{E_{q}} = \frac{1}{4 \pi \epsilon_{0}} \int_{C'} \frac{\rho(\vec{r'})(\vec{r}-\vec{r'}))}{|\vec{r}-\vec{r'}|^3} $$
+
+
+
+</h3>>
+
+</body>
